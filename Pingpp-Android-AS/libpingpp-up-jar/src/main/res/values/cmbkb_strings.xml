@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cmbkb_caption">CMB Safe Input</string>
+    <string name="cmbkb_finish">Finish</string>
+    <string name="cmbkb_more">More</string>
+    <string name="cmbkb_please_input">Please Input</string>
+    <string name="cmbkb_safe_input">Safe Input</string>
+    <string name="cmbkb_back">Back</string>
+    <!--<string name="cmbkb_publickey">GOBtoTuY+jKU+v0swC7WHLG8bVzupJ4PbiyvQ3116JbiCRMi2xGwgxfEJeJ11uGUDByN0I96LGE2k7XP7sNqp8rThKUMnGo+eDP6neHrH+rufT+S0RfvXSkYTl9xCwPmmhd2wbbq1CDyuWgzEkSRCSPFWVyVS+Utj9v+W5aOWd78qkYjm5hrkSxYiutr2VJ7KmVbdSIcllDA9liQk2ZT0hv4vcvSx7MVIeNNc1xU1lYCyCA4zEb6GYg2K4YWTYshonUg6ptb2AqQtNfuG0UcyCixkhfY5EAeNJG0NOtY3n87z96BhwuZZ0uEHPIdF2C7pptj9ap2+F66MhLPjOTIdA==</string>-->
+    <string name="cmbkb_publickey">jthkY15uusnCIUbT9t+VSE59wI1JRO6wfmgSANzHHG6YvluNub00jdXh03RM+KqaU+NweKkXVncqFRm6eTgtRv/3tdR7ER7Ebqa8fZ0v/rCQXwoRjQG/6A3hg4LgHLQvnmoYbNqZqoP0andbzIXxDK2SArVekbtL9lVUKL23yXOpAdVzwWncOui0d6souh5/tL6txI1IgbXam9mnmNzfMUodPKCIlKcjhPksDHTMND9DHKaTZMHgG4I/8TR5IA52eqgttyR9yxdg/AAWjFZO389gWUM+beAYml5n9TGRJ9kIUVmaJeWsCR/4dzoz/TzFiB1HoZNhnnQV9jJ54fkbOg==</string>
+
+</resources>
