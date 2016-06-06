@@ -26,6 +26,21 @@ import java.math.BigDecimal;
 import java.text.NumberFormat;
 import java.util.Locale;
 
+/**
+ *
+ * ping++ sdk 示例程序，仅供开发者参考。
+ * 【说明文档】https://github.com/PingPlusPlus/pingpp-android/blob/master/docs/ping%2B%2B安卓SDK使用文档.md
+ *
+ * 【注意】运行该示例，需要用户填写一个YOUR_URL。
+ *
+ * ping++ sdk 使用流程如下：
+ * 1）客户端已经有订单号、订单金额、支付渠道
+ * 2）客户端请求服务端获得charge。服务端生成charge的方式参考ping++ 官方文档，地址 https://www.pinpula.com/guidance/server/import
+ * 3）收到服务端的charge，调用ping++ sdk 。
+ * 4）onActivityResult 中获得支付结构。
+ * 5）如果支付成功。服务端会收到ping++ 异步通知，支付成功依据服务端异步通知为准。
+ */
+
 public class MainActivity extends Activity implements View.OnClickListener {
     /**
      *开发者需要填一个服务端URL 该URL是用来请求支付需要的charge。务必确保，URL能返回json格式的charge对象。
