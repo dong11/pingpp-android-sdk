@@ -16,6 +16,9 @@
 #   public *;
 #}
 
+
+-keepattributes Signature
+
 -keepclassmembers class com.pingplusplus.android.PaymentActivity {
     public java.lang.String EXTRA_CHARGE;
 }
@@ -47,6 +50,13 @@
 
 -keepclassmembers class com.pingplusplus.android.PingppLog{
     public boolean DEBUG;
+}
+
+-dontwarn cmb.pb.util.**
+-keepclasseswithmembers class cmb.pb.util.CMBKeyboardFunc {
+    public <init>(android.app.Activity);
+    public boolean HandleUrlCall(android.webkit.WebView,java.lang.String);
+    public void callKeyBoardActivity();
 }
 
 -dontwarn com.alipay.**

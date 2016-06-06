@@ -45,22 +45,10 @@ task makeJar(type: Copy) {
     rename('classes.jar', 'libpingpp.jar')
 }
 
-task signJar << {
-    description = "Signs JAR"
-    ant.signjar(jar: 'build/libs/libpingpp.jar',
-            alias: 'pingpp',
-            keystore: 'jianmi.jks',
-            storepass: '1hblsqT',
-            keypass: '1hblsqT',
-            tsaurl: 'http://timestamp.digicert.com')
-}
-
 makeJar.dependsOn(clearJar, build)
-signJar.dependsOn(makeJar)
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-//    provided fileTree(dir: 'libs', include: ['*.jar'])
     provided 'com.android.support:support-v4:23.1.1'
     compile project(':bdwallet_pay_sdk')
 }
