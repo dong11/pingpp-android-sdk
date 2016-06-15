@@ -15,6 +15,7 @@ import android.widget.EditText;
 import com.google.gson.Gson;
 import com.pingplusplus.android.Pingpp;
 import com.pingplusplus.android.PingppLog;
+import com.squareup.leakcanary.LeakCanary;
 import com.squareup.okhttp.MediaType;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
@@ -42,6 +43,7 @@ import java.util.Locale;
  */
 
 public class MainActivity extends Activity implements View.OnClickListener {
+
     /**
      *开发者需要填一个服务端URL 该URL是用来请求支付需要的charge。务必确保，URL能返回json格式的charge对象。
      *服务端生成charge 的方式可以参考ping++官方文档，地址 https://pingxx.com/guidance/server/import
@@ -76,6 +78,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
      * 易宝支付渠道
      */
     private static final String CHANNEL_YEEPAY_WAP = "yeepay_wap";
+    /**
+     * 招行
+     */
+    private static final String CHANNEL_CMB = "cmb_wallet";
 
     private EditText amountEditText;
     private Button wechatButton;
@@ -84,6 +90,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Button bfbButton;
     private Button jdpayButton;
     private Button yeepayButton;
+    private Button cmbButton;
 
     private String currentAmount = "";
 
@@ -100,6 +107,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         bfbButton = (Button) findViewById(R.id.bfbButton);
         jdpayButton =(Button) findViewById(R.id.jdpayButton);
         yeepayButton =(Button) findViewById(R.id.yeepayButton);
+        cmbButton =(Button) findViewById(R.id.cmbButton);
 
         wechatButton.setOnClickListener(MainActivity.this);
         alipayButton.setOnClickListener(MainActivity.this);
@@ -107,6 +115,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         bfbButton.setOnClickListener(MainActivity.this);
         jdpayButton.setOnClickListener(MainActivity.this);
         yeepayButton.setOnClickListener(MainActivity.this);
+        cmbButton.setOnClickListener(MainActivity.this);
 
         PingppLog.DEBUG = true;
 
@@ -142,6 +151,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 }
             }
         });
+
+        LeakCanary.install(getApplication());
     }
 
     @Override
@@ -166,6 +177,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
             new PaymentTask().execute(new PaymentRequest(CHANNEL_JDPAY_WAP, amount));
         } else if(view.getId() == R.id.yeepayButton){
             new PaymentTask().execute(new PaymentRequest(CHANNEL_YEEPAY_WAP, amount));
+        } else if(view.getId() == R.id.cmbButton){
+            new PaymentTask().execute(new PaymentRequest(CHANNEL_CMB, amount));
         }
     }
 

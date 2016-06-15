@@ -84,7 +84,7 @@
             android:text="@string/upmp" />
 
         <Button
-            android:id="@+id/bfbButton"
+            android:id="@+id/cmbButton"
             style="@style/GrayBoaderButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,6 +93,21 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentStart="true"
             android:layout_below="@id/upmpButton"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cmb" />
+
+        <Button
+            android:id="@+id/bfbButton"
+            style="@style/GrayBoaderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/cmbButton"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
