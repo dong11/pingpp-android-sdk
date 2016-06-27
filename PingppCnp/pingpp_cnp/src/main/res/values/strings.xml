@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">com.pingplusplus.nocard</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_card_manager">CardManagerActivity</string>
+    <string name="title_activity_security_center">SecurityCenterActivity</string>
+    <string name="title_activity_select_bank">SelectBankActivity</string>
+</resources>

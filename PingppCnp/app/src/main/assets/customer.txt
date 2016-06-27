@@ -1,0 +1,60 @@
+{
+    "id": "cus_BDRPEqTjirWnXH",
+    "object": "customer",
+    "created": 1448431022,
+    "livemode": true,
+    "app": "app_LibTW1n1SOq9Pin1",
+    "name": "黄栋",
+    "email": null,
+    "currency": null,
+    "description": null,
+    "metadata": null,
+    "sources": {
+        "object": "list",
+        "url": "/v1/customers/cus_BDKSIB3036o3Pg/sources",
+        "has_more": false,
+        "data": [
+            {
+                "id": "card_BDRPEBh7y7TucvXpMYm6eLNS",
+                "object": "card",
+                "created": 1458199826,
+                "last4": "8156",
+                "funding": "debit",
+                "brand": "UnionPay",
+                "bank": "ccb",
+                "customer": "cus_BDRPEqTjirWnXH"
+            },
+            {
+                "id": "card_BBTNGPCQW621KCWN1eLQooxz",
+                "object": "card",
+                "created": 1453182466,
+                "last4": "8157",
+                "funding": "debit",
+                "brand": "UnionPay",
+                "bank": "ccb",
+                "customer": "cus_BDRPEqTjirWnXH"
+            },
+            {
+                "id": "card_BBTNGPCQW621KCWN1eLQooxx",
+                "object": "card",
+                "created": 1453182466,
+                "last4": "8158",
+                "funding": "debit",
+                "brand": "UnionPay",
+                "bank": "ccb",
+                "customer": "cus_BDKSIB3036o3Pg"
+            },
+            {
+                "id": "card_BBTNGPCQW621KCWN1eLQooxc",
+                "object": "card",
+                "created": 1453182466,
+                "last4": "8159",
+                "funding": "debit",
+                "brand": "UnionPay",
+                "bank": "ccb",
+                "customer": "cus_BDRPEqTjirWnXH"
+            }
+        ]
+    },
+    "default_source": "card_BDRPEBh7y7TucvXpMYm6eLNS"
+}

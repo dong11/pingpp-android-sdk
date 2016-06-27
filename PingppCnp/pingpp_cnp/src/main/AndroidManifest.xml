@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pingplusplus.nocard">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.pingplusplus.nocard.activity.AddCardActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity
+            android:name="com.pingplusplus.nocard.activity.ManagerCardActivity"
+            android:label="@string/title_activity_card_manager" />
+        <activity
+            android:name="com.pingplusplus.nocard.activity.SecurityCenterActivity"
+            android:label="@string/title_activity_security_center" />
+
+    </application>
+
+</manifest>
