@@ -60,6 +60,14 @@
             android:name="com.unionpay.uppay.PayActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize" />
 
+        <!-- 招行 -->
+        <service android:name="cmb.pb.cmbsafe.CmbService" android:exported="false">
+        </service>
+        <activity
+            android:name="cmb.pb.ui.PBKeyboardActivity"
+            android:theme="@style/CmbDialogStyleBottom" >
+        </activity>
+
         <!-- 百付宝 sdk -->
         <activity
             android:name="com.baidu.paysdk.login.LoginActivity"

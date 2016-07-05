@@ -51,7 +51,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
      *【 http://218.244.151.190/demo/charge 】是 ping++ 为了方便开发者体验 sdk 而提供的一个临时 url 。
      * 该 url 仅能调用【模拟支付控件】，开发者需要改为自己服务端的 url 。
      */
-    private static String YOUR_URL = "http://218.244.151.190/demo/charge";
+//    private static String YOUR_URL = "http://218.244.151.190/demo/charge";
+    private static String YOUR_URL = "http://115.29.205.93/tests/pay.php";
     public static final String URL = YOUR_URL;
 
     /**
@@ -204,6 +205,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
             try {
                 //向Your Ping++ Server SDK请求数据
                 data = postJson(URL, json);
+
+                Log.i("123", "::" + data);
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
