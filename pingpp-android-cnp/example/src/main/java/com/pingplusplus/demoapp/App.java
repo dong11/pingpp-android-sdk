@@ -2,6 +2,7 @@ package com.pingplusplus.demoapp;
 
 import android.app.Application;
 
+
 /**
  * @author dong {hwongrex@gmail.com}
  * @date 16/5/17
@@ -14,6 +15,7 @@ public class App extends Application{
     public static String customer;
     public static final String APP_ID = "";
     public static final String PUBLISHABLE_KEY = "";
+
 
     @Override
     public void onCreate() {

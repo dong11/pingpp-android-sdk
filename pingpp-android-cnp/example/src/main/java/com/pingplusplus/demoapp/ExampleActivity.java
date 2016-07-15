@@ -23,7 +23,7 @@ import java.util.List;
  */
 public class ExampleActivity extends FragmentActivity implements View.OnClickListener {
 
-    private static String URL = "http://218.244.151.190/demo/charge";
+    private static String URL = "";
 
     private ListView mListView;
     private GoodsAdapter myAdapter;

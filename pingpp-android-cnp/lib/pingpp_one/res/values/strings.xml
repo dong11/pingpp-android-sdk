@@ -1,4 +1,13 @@
 <resources>
+    <string name="app_name">com.pingplusplus.nocard</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_card_manager">CardManagerActivity</string>
+    <string name="title_activity_security_center">SecurityCenterActivity</string>
+    <string name="title_activity_select_bank">SelectBankActivity</string>
+
     <string name="pingpp_title_activity_pay">支付</string>
     <string name="pingpp_title_activity_pay_successed">支付成功</string>
     <string name="pingpp_title_activity_pay_filed">支付失败</string>
@@ -14,11 +23,11 @@
     <string name="pingpp_wechat">微信支付</string>
     <string name="pingpp_bfb">百度钱包</string>
     <string name="pingpp_upacp">银联支付</string>
+    <string name="pingpp_cmbkb">招行一网通</string>
     <string name="pingpp_yeepay_wap">易宝支付</string>
     <string name="pingpp_jdpay_wap">京东支付</string>
     <string name="pingpp_prompt_pay_falied">可能因为网络过于繁忙</string>
     <string name="pingpp_continue_buy">继续购物</string>
     <string name="pingpp_pay_complete">完成</string>
     <string name="pingpp_add_new_card">添加新银行卡</string>
-
 </resources>
